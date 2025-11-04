@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paul Chukwu — Resume</title>
+  <meta name="description" content="Resume and cover letter for Paul Chukwu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><div class="logo" aria-hidden="true"></div> <span>Paul Chukwu</span></div>
+      <div class="nav-links">
+        <a href="index.html" data-tab="home">Home</a>
+        <a href="projects.html" data-tab="projects">Projects</a>
+        <a href="events.html" data-tab="events">Events</a>
+        <a href="resume.html" data-tab="resume">Resume</a>
+        <a href="videos.html" data-tab="videos">Videos</a>
+        <a class="cta" href="mailto:paul.chukwu@example.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+<section class="container">
+  <h2 class="section-title">Resume & Cover Letter</h2>
+  <div class="two-col">
+    <div class="card"><div class="card-inner">
+      <h3 style="margin-top:4px">Resume Highlights</h3>
+      <div class="resume-list" id="resumeList"></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <a class="btn primary" href="assets/Paul_Chukwu_Resume_hardware(123).pdf" download>Download PDF</a>
+        <a class="btn" href="assets/Paul_Chukwu_Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+    </div></div>
+    <div class="card"><div class="card-inner">
+      <h3 style="margin-top:4px">Cover Letter</h3>
+      <p class="muted">Make a role‑specific copy of this template per application.</p>
+      <div class="resume-item" contenteditable="true" spellcheck="true" style="min-height:220px">
+        <div class="title">Dear Hiring Manager,</div>
+        <p>I'm a Computer Engineering student at uOttawa with hands‑on experience across embedded systems, robotics, and Android. I design, build, and iterate quickly — from sensors and firmware to UI. I’d be excited to contribute to <strong>[Company/Team]</strong> by <em>shipping reliable, well‑tested features</em> that improve real users’ lives.</p>
+        <p>Recent work: <strong>EcoSorter</strong> (AI‑assisted waste sorting with servo control), <strong>Mirror Cap</strong> (assistive smart‑glasses), and a <strong>chess‑playing robot arm</strong> (C++/MATLAB). I value readable code, thoughtful documentation, and collaborative reviews.</p>
+        <p>Thanks for your time — I’d love to chat!</p>
+        <p>Sincerely,<br/>Paul Chukwu</p>
+      </div>
+      <p class="muted" style="margin-top:10px">Tip: Edit the boxed text, then copy‑paste into your application portal.</p>
+    </div></div>
+  </div>
+</section>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Paul Chukwu. All rights reserved.</div>
+      <div class="muted">Built with vanilla HTML/CSS/JS. Deployed on GitHub Pages or Netlify.</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
