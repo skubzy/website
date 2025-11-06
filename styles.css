@@ -155,6 +155,7 @@ section{scroll-margin-top:80px;padding:30px 0}
   padding:14px;border-radius:14px;background:var(--panel);border:1px solid rgba(255,255,255,.12)
 }
 
+
 /* VIDEO */
 .video-wrap{
   position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12)
@@ -174,4 +175,119 @@ footer{opacity:.85;padding:28px 0;border-top:1px solid rgba(255,255,255,.08)}
   .project-grid{grid-template-columns:1fr}
   .big-title{font-size:32px}
 }
-```
+/* === Skills page padding tweaks === */
+.skills-page .card-inner { padding: 40px; }            /* was 26px */
+.skills-page .resume-item { padding: 1px; }
+.skills-page .resume-item { padding-top: 10px; } 
+.skills-page .resume-item { padding-bottom: 15px; }            /* was 14px */
+.skills-page .section-title { padding-top: 10px; }       /* add space above title */
+.skills-page section { padding: 40px 0; }               /* top/bottom for each section */
+.skills-page .btn-strip { padding: 12px; }              /* the button group under hero */
+.skills-page .muted { padding: 4px 0; }   
+
+.skills-page #interests .card-inner { padding: 28px;  }
+.skills-page #skills .resume-item{ padding-left: 15px; }
+.skills-page #skills .card-inner { padding: 28px;  }
+.skills-page #interests .resume-item{ padding: 2px; font-size: 40px;  }
+.skills-page #interests .resume-list{ padding: 28px; font-size: 50px;  }
+.skills-page #interests .resume-list{ padding: 28px; font-size: 50px;  }
+.skills-page #skills .muted{ padding-top: 15px; }
+.skills-page #awards .resume-item{ padding-left:  15px; }
+.skills-page #awards .resume-item{ padding-top:  15px; }
+.skills-page #contact .card-inner { padding: 18px;  }
+.skills-page #contact .resume-item{ padding:  15px; }
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to new lines */
+  justify-content: space-around; /* Distributes space around items */
+  align-items: flex-start; /* Aligns items at the start of the cross axis */
+}
+
+.flex-item {
+  flex: 1 1 200px; /* shorthand for flex-grow, flex-shrink, flex-basis */
+  /* This means items can grow, shrink, and have a preferred width of 200px */
+  padding: 15px;
+  margin: 10px;
+  background-color: lightblue;
+  text-align: center;
+}
+.project-card {
+  display: block;          /* makes the whole card clickable */
+  text-decoration: none;   /* optional: remove underline */
+  cursor: pointer;
+}
+/* Header layout already looks good; just style the brand/logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;     /* remove underline on the brand link */
+  color: inherit;            /* keep your current text color */
+}
+
+.logo {
+  height: 32px;              /* adjust as needed (24–48px is common) */
+  width: auto;
+  display: block;
+}
+
+/* Optional: shrink on very small screens */
+@media (max-width: 420px) {
+  .logo { height: 28px; }
+  .brand span { font-size: 0.95rem; font-weight: 700; }
+}
+.gymPhotos {
+  height: 300px;              /* adjust as needed (24–48px is common) */
+  width: auto;
+  display: block;
+}
+
+/* Optional: shrink on very small screens */
+@media (max-width: 100px) {
+  .gymPhotos { height: 30px; }
+  .brand span { font-size: 1rem; font-weight: 100; }
+}
+.gym-Container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;            /* allow items to wrap instead of overflowing */
+  gap: 16px;
+  width: 100%;                /* stay within the parent width */
+  min-width: 0;               /* important for flex children to shrink */
+}
+
+/* Children: allow shrinking and set a base size */
+.gym-Container > * {
+  flex: 1 1 300px;            /* grows, shrinks, preferred width */
+  min-width: 0;               /* prevents overflow from long content */
+}
+
+/* Hide any `.title` that has no text/content */
+.resume-item .title:empty { display: none; }
+
+/* Also kill default margins so anchors/divs with .title don’t add spacing */
+.resume-item .title { margin: 0; }
+/* Thumbnail container */
+.media {
+  aspect-ratio: 16 / 9;     /* consistent card height */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0c0c0c;      /* fallback while loading */
+}
+
+/* Image fills and crops nicely */
+.project-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .25s ease;
+}
+
+/* subtle hover polish (optional) */
+.card.project:hover .project-img { transform: scale(1.02); }

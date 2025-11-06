@@ -4,6 +4,7 @@
     'index.html':'home',
     'projects.html':'projects',
     'events.html':'events',
+    'skills.html' : 'skills',
     'resume.html':'resume',
     'videos.html':'videos'
   };
@@ -17,12 +18,12 @@
 
 // Data
 const PROJECTS = [
-  {title:"EcoSorter", blurb:"AI‑assisted waste sorting bin with servo‑controlled compartments.", tags:["embedded","ai"], link:"#", image:""},
-  {title:"Mirror Cap", blurb:"Assistive smart glasses: ultrasonic, LDR, haptics, and buzzer feedback.", tags:["embedded"], link:"#", image:""},
-  {title:"Chess Arm", blurb:"Arduino robot arm that detects nearest object and moves pieces.", tags:["robotics","embedded"], link:"#", image:""},
-  {title:"Apps4Apps", blurb:"Android app aggregator with Firebase login and nav fragments.", tags:["android"], link:"#", image:""},
+  {title:"EcoSorter", blurb:"AI‑assisted waste sorting bin with servo‑controlled compartments.", tags:["embedded","ai"], link:"#", image:"assets/Eco/ProjectEco1.png"},
+  {title:"Mirror Cap", blurb:"Assistive smart glasses: ultrasonic, LDR, haptics, and buzzer feedback.", tags:["embedded"], link:"#", image:"assets/Mirror/ProjectMirror1.jpg"},
+  {title:"Chess Arm", blurb:"Arduino robot arm that detects nearest object and moves pieces.", tags:["robotics","embedded"], link:"#", image:"assets/Game/ProjectGame3.jpg"},
+  {title:"Apps4Apps", blurb:"Android app aggregator with Firebase login and nav fragments.", tags:["android"], link:"#", image:"assets/App/ProjectApp.jpg"},
   {title:"Traffic Light FSM", blurb:"Verilog/VHDL traffic light controller on FPGA dev board.", tags:["embedded"], link:"#", image:""},
-  {title:"Gen3 Kinematics", blurb:"MATLAB DH model & forward kinematics for Kinova Gen3.", tags:["robotics"], link:"#", image:""}
+  {title:"Gen3 Kinematics", blurb:"MATLAB DH model & forward kinematics for Kinova Gen3.", tags:["robotics"], link:"#", image:"assets/Robotics/ProjectRobotic.png"}
 ];
 
 const EVENTS = [
@@ -33,6 +34,8 @@ const EVENTS = [
   {date:"2025-09-26", title:"CEG 3155 Lab", where:"Campus Lab", note:"Atomic modules — structural VHDL"}
 ];
 
+
+
 const RESUME_HIGHLIGHTS = [
   {title:"uOttawa — Computer Engineering (BASc)", detail:"3rd year • Systems, Embedded, Robotics"},
   {title:"Projects", detail:"EcoSorter, Mirror Cap, Chess Arm, Apps4Apps, Gen3 Kinematics"},
@@ -41,31 +44,50 @@ const RESUME_HIGHLIGHTS = [
 ];
 
 // Projects page
+// Projects page
 (function(){
   const grid = document.getElementById('projectGrid');
   if(!grid) return;
+
   function render(filter='all'){
-    grid.innerHTML='';
-    const list = PROJECTS.filter(p => filter==='all' || p.tags.includes(filter));
-    for(const p of list){
+    grid.innerHTML = '';
+    const list = PROJECTS.filter(p => filter === 'all' || p.tags.includes(filter));
+
+    for (const p of list) {
       const el = document.createElement('article');
       el.className = 'card project';
+
+      // Media block with <img> if provided
+      const mediaHTML = (p.image && p.image.trim() !== '')
+        ? `<img class="project-img"
+                 src="${p.image}"
+                 alt="${p.title}"
+                 loading="lazy"
+                 decoding="async"
+                 onerror="this.closest('.media').style.display='none'">`
+        : '';
+
       el.innerHTML = `
-        <div class="media"></div>
+        <div class="media">${mediaHTML}</div>
         <div class="body" style="padding:16px">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
             <h3 style="margin:0">${p.title}</h3>
-            <div>${p.tags.map(t=>`<span class='tag'>${t}</span>`).join('')}</div>
+            <div>${p.tags.map(t => `<span class='tag'>${t}</span>`).join('')}</div>
           </div>
           <p class="muted" style="margin:8px 0 12px">${p.blurb}</p>
           <a class="btn" href="${p.link}" target="_blank" rel="noopener">View</a>
-        </div>`;
+        </div>
+      `;
       grid.appendChild(el);
     }
   }
+
   render('all');
-  document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>render(b.dataset.filter)));
+  document.querySelectorAll('[data-filter]').forEach(b =>
+    b.addEventListener('click', () => render(b.dataset.filter))
+  );
 })();
+
 
 // Events page
 (function(){
