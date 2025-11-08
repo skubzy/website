@@ -37,7 +37,7 @@ const EVENTS = [
 
 
 const RESUME_HIGHLIGHTS = [
-  {title:"uOttawa — Computer Engineering (BASc)", detail:"3rd year • Systems, Embedded, Robotics"},
+  {title:"uOttawa — Computer Engineering (BASc)", detail:"4th year • Systems, Embedded, Robotics"},
   {title:"Projects", detail:"EcoSorter, Mirror Cap, Chess Arm, Apps4Apps, Gen3 Kinematics"},
   {title:"Tech", detail:"C/C++, Python, Java, VHDL, SystemVerilog, MATLAB, Arduino, Android"},
   {title:"Awards", detail:"Crunch Competition • Ross FBGA • Ontario Honour Roll"}
