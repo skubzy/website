@@ -18,12 +18,12 @@
 
 // Data
 const PROJECTS = [
-  {title:"EcoSorter", blurb:"AI‑assisted waste sorting bin with servo‑controlled compartments.", tags:["embedded","ai"], link:"#", image:"assets/Eco/ProjectEco1.png"},
-  {title:"Mirror Cap", blurb:"Assistive smart glasses: ultrasonic, LDR, haptics, and buzzer feedback.", tags:["embedded"], link:"#", image:"assets/Mirror/ProjectMirror1.jpg"},
-  {title:"Chess Arm", blurb:"Arduino robot arm that detects nearest object and moves pieces.", tags:["robotics","embedded"], link:"#", image:"assets/Game/ProjectGame3.jpg"},
-  {title:"Apps4Apps", blurb:"Android app aggregator with Firebase login and nav fragments.", tags:["android"], link:"#", image:"assets/App/ProjectApp.jpg"},
-  {title:"Traffic Light FSM", blurb:"Verilog/VHDL traffic light controller on FPGA dev board.", tags:["embedded"], link:"#", image:""},
-  {title:"Gen3 Kinematics", blurb:"MATLAB DH model & forward kinematics for Kinova Gen3.", tags:["robotics"], link:"#", image:"assets/Robotics/ProjectRobotic.png"}
+  {title:"EcoSorter", blurb:"AI‑assisted waste sorting bin with servo‑controlled compartments.", tags:["embedded","ai"], link:"ecollector.html", image:"assets/Eco/ProjectEco1.png"},
+  {title:"Mirror Cap", blurb:"Assistive smart glasses: ultrasonic, LDR, haptics, and buzzer feedback.", tags:["embedded"], link:"mirrorCap.html", image:"assets/Mirror/ProjectMirror1.jpg"},
+  {title:"Chess Arm", blurb:"Arduino robot arm that detects nearest object and moves pieces.", tags:["robotics","embedded"], link:"chessArm.html", image:"assets/Game/ProjectGame3.jpg"},
+  {title:"Apps4Apps", blurb:"Android app aggregator with Firebase login and nav fragments.", tags:["android"], link:"app4Apps.html", image:"assets/App/ProjectApp.jpg"},
+  {title:"Traffic Light FSM", blurb:"Verilog/VHDL traffic light controller on FPGA dev board.", tags:["embedded"], link:"trafficLightSim.html", image:""},
+  {title:"Gen3 Kinematics", blurb:"MATLAB DH model & forward kinematics for Kinova Gen3.", tags:["robotics"], link:"gen3Kinematics.html", image:"assets/Robotics/ProjectRobotic.png"}
 ];
 
 const EVENTS = [
