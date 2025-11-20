@@ -1,7 +1,7 @@
 // Google Calendar Integration
 const CALENDAR_CONFIG = {
   calendarId: 'paul.chukwu.official@gmail.com',
-  apiKey: 'AIzaSyBenS_qNqKUvAbSYpTji8YkjK9JZQxgc8I'
+  apiKey: API_key
 };
 
 let allEvents = [];
