@@ -21,6 +21,9 @@ const PROJECTS = [
   {title:"EcoSorter", blurb:"AI‑assisted waste sorting bin with servo‑controlled compartments.", tags:["embedded","ai"], link:"ecollector.html", image:"assets/Eco/ProjectEco1.png"},
   {title:"Mirror Cap", blurb:"Assistive smart glasses: ultrasonic, LDR, haptics, and buzzer feedback.", tags:["embedded"], link:"mirrorCap.html", image:"assets/Mirror/ProjectMirror1.jpg"},
   {title:"Chess Arm", blurb:"Arduino robot arm that detects nearest object and moves pieces.", tags:["robotics","embedded"], link:"chessArm.html", image:"assets/Game/ProjectGame3.jpg"},
+  {title:"Ultra Drone Detector", blurb:"CNN‑based drone detection system with real‑time classification and tracking.", tags:["ai"], link:"uddCNN.html", image:"assets/CNN Projects/image.png"},
+  {title:"Coffee Date", blurb:"Full-stack dating app with matching algorithm and real-time messaging.", tags:["android"], link:"coffeeDate.html", image:"assets/Coffee date/Screenshot 2025-11-20 003443.png"},
+  {title:"VI Glasses", blurb:"Assistive technology glasses for the blind using computer vision and audio feedback.", tags:["embedded","ai"], link:"viGlasses.html", image:"assets/VI glasses/Screenshot 2025-11-20 004803.png"},
   {title:"Apps4Apps", blurb:"Android app aggregator with Firebase login and nav fragments.", tags:["android"], link:"app4Apps.html", image:"assets/App/ProjectApp.jpg"},
   {title:"Traffic Light FSM", blurb:"Verilog/VHDL traffic light controller on FPGA dev board.", tags:["embedded"], link:"trafficLightSim.html", image:""},
   {title:"Gen3 Kinematics", blurb:"MATLAB DH model & forward kinematics for Kinova Gen3.", tags:["robotics"], link:"gen3Kinematics.html", image:"assets/Robotics/ProjectRobotic.png"}
