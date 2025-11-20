@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paul Chukwu — Chess Arm</title>
+  <meta name="description" content="Chess Arm: Arduino robot arm that detects and moves chess pieces autonomously." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Paul Chukwu — Home">
+        <img class="logo" src="assets/Logo/PaulsLogo.png" alt="" />
+        <span>Paul Chukwu</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-tab="home">Home</a>
+        <a href="projects.html" data-tab="projects">Projects</a>
+        <a href="events.html" data-tab="events">Events</a>
+        <a href="resume.html" data-tab="resume">Resume</a>
+        <a href="videos.html" data-tab="videos">Videos</a>
+        <a class="cta" href="mailto:paul.chukwu@example.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="project-header">
+          <h1 class="big-title">Chess Arm</h1>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="tag">Robotics</span>
+            <span class="tag">Embedded</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Arduino</span>
+          </div>
+        </div>
+        <p class="muted">An autonomous 6-DOF robot arm that detects chess pieces, plans moves, and executes them with precision. Combines computer vision, motion planning, and real-time control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Project Overview</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>What is Chess Arm?</h3>
+        <p class="muted">Chess Arm is a sophisticated robotics project that brings autonomous chess playing to life. The 6-degree-of-freedom robot arm uses machine vision to analyze the chess board, detects piece positions, calculates optimal moves, and physically executes them with millimeter precision.</p>
+        <h3 style="margin-top:20px">Core Capabilities</h3>
+        <ul class="feature-list">
+          <li><strong>Board Recognition:</strong> Real-time chessboard detection and piece identification</li>
+          <li>Move Planning: Advanced pathfinding and collision avoidance</li>
+          <li>Precision Motion: Sub-millimeter accuracy in piece placement</li>
+          <li>Chess Engine Integration: Optimal move calculation</li>
+          <li>Robust Gripper: Reliable piece handling and placement</li>
+          <li>Full Automation: Complete game play without human intervention</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Technical Architecture</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>Hardware Components</h3>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <strong>Arm Platform</strong><br>
+            <span class="muted">6-DOF Robot Arm</span>
+          </div>
+          <div class="tech-item">
+            <strong>Control System</strong><br>
+            <span class="muted">Arduino + Servo Controllers</span>
+          </div>
+          <div class="tech-item">
+            <strong>Vision System</strong><br>
+            <span class="muted">High-res Camera</span>
+          </div>
+          <div class="tech-item">
+            <strong>Processing</strong><br>
+            <span class="muted">C++/MATLAB</span>
+          </div>
+        </div>
+        <h3 style="margin-top:24px">Software Pipeline</h3>
+        <ul class="feature-list">
+          <li>Image processing for board state detection</li>
+          <li>Piece classification using computer vision</li>
+          <li>Inverse kinematics for motion planning</li>
+          <li>Chess engine for intelligent move selection</li>
+          <li>Real-time servo control and feedback</li>
+          <li>Collision detection and avoidance algorithms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Demo Videos</h2>
+    <div class="gallery-grid">
+      <div class="gallery-section">
+        <h3 class="gallery-title">Robot Demonstrations</h3>
+        <div class="video-gallery">
+          <div class="video-item">
+            <video width="100%" height="auto" controls style="border-radius: 12px; background: #000;">
+              <source src="assets/Chess/WhatsApp Video 2025-11-04 at 20.39.09_5ee8fe64.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="muted" style="margin-top: 8px; text-align: center; font-size: 14px;">Demo 1 - Piece Recognition</p>
+          </div>
+          <div class="video-item">
+            <video width="100%" height="auto" controls style="border-radius: 12px; background: #000;">
+              <source src="assets/Chess/WhatsApp Video 2025-11-04 at 20.39.09_d5bbf258.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="muted" style="margin-top: 8px; text-align: center; font-size: 14px;">Demo 2 - Move Execution</p>
+          </div>
+          <div class="video-item">
+            <video width="100%" height="auto" controls style="border-radius: 12px; background: #000;">
+              <source src="assets/Chess/ProjectChess.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="muted" style="margin-top: 8px; text-align: center; font-size: 14px;">Full Gameplay Demo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-section">
+        <h3 class="gallery-title">Project Images</h3>
+        <div class="photo-grid expandable">
+          <div class="photo-item clickable">
+            <img src="assets/Chess/ProjectChess.jpg" alt="Chess Arm Project" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Technical Challenges</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>Computer Vision</h3>
+        <p class="muted">Accurately detecting and classifying 32 chess pieces under varying lighting conditions and camera angles. Solution involved advanced image processing, machine learning, and robust feature matching.</p>
+        
+        <h3 style="margin-top:20px">Motion Planning</h3>
+        <p class="muted">Planning collision-free trajectories while maintaining speed and accuracy. Implemented sophisticated inverse kinematics algorithms and path optimization techniques.</p>
+
+        <h3 style="margin-top:20px">Real-time Control</h3>
+        <p class="muted">Coordinating 6 servo motors with millisecond timing while processing sensor feedback. Utilized interrupt-driven architecture and optimized servo control loops.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Key Achievements</h2>
+    <div class="card">
+      <div class="card-inner">
+        <div class="results-grid">
+          <div class="result-item">
+            <div class="result-number">6-DOF</div>
+            <div class="result-label">Degrees of Freedom</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">±2mm</div>
+            <div class="result-label">Precision</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">98%</div>
+            <div class="result-label">Success Rate</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">3-5s</div>
+            <div class="result-label">Move Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Development Challenges & Solutions</h2>
+    <div class="card">
+      <div class="card-inner">
+        <div class="challenge-item">
+          <h4>Challenge: Piece Detection Accuracy</h4>
+          <p class="muted">Reliably identifying piece types and positions under diverse conditions.</p>
+          <p class="muted"><strong>Solution:</strong> Multi-stage detection pipeline with CNN-based classification and post-processing filters.</p>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:20px 0">
+        <div class="challenge-item">
+          <h4>Challenge: Gripper Reliability</h4>
+          <p class="muted">Handling pieces without damaging the board or dropping pieces.</p>
+          <p class="muted"><strong>Solution:</strong> Precision gripper design with force feedback and adaptive grip control.</p>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:20px 0">
+        <div class="challenge-item">
+          <h4>Challenge: Real-time Performance</h4>
+          <p class="muted">Processing vision data and executing moves without significant delay.</p>
+          <p class="muted"><strong>Solution:</strong> Optimized algorithms, parallel processing, and efficient servo communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <a class="btn primary" href="projects.html">Back to Projects</a>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Paul Chukwu. All rights reserved.</div>
+      <div class="muted">Built with vanilla HTML/CSS/JS. Deployed on GitHub Pages or Netlify.</div>
+    </div>
+  </footer>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Image expansion modal
+    document.querySelectorAll('.photo-grid.expandable .photo-item.clickable img').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const captionText = document.getElementById('caption');
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+        captionText.textContent = this.alt;
+      });
+    });
+
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.querySelector('.modal-close');
+    
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

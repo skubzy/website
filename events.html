@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://apis.google.com/js/client.js"></script>
 </head>
 <body>
   <nav class="nav">
@@ -30,13 +31,15 @@
 
 <section class="container">
   <h2 class="section-title">Events</h2>
-  <p class="muted">Talks, meetups, classes — past and upcoming. Dates are YYYY‑MM‑DD.</p>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 16px">
+  <p class="muted">Talks, meetups, classes — past and upcoming. Synced with Google Calendar.</p>
+  <div class="filter-controls">
     <button class="btn" id="showAll">All</button>
     <button class="btn" id="showUpcoming">Upcoming</button>
     <button class="btn" id="showPast">Past</button>
   </div>
-  <div class="card"><div class="card-inner timeline" id="timeline"></div></div>
+  <div class="card"><div class="card-inner timeline" id="timeline">
+    <div class="loading-spinner">Loading events...</div>
+  </div></div>
 </section>
 
   <footer class="container">
@@ -46,5 +49,6 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="calendar.js"></script>
 </body>
 </html>

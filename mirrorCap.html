@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paul Chukwu — Mirror Cap</title>
+  <meta name="description" content="Mirror Cap: Assistive smart glasses with ultrasonic, LDR, haptics, and buzzer feedback." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Paul Chukwu — Home">
+        <img class="logo" src="assets/Logo/PaulsLogo.png" alt="" />
+        <span>Paul Chukwu</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-tab="home">Home</a>
+        <a href="projects.html" data-tab="projects">Projects</a>
+        <a href="events.html" data-tab="events">Events</a>
+        <a href="resume.html" data-tab="resume">Resume</a>
+        <a href="videos.html" data-tab="videos">Videos</a>
+        <a class="cta" href="mailto:paul.chukwu@example.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="project-header">
+          <h1 class="big-title">Mirror Cap</h1>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="tag">Embedded</span>
+            <span class="tag">Assistive Tech</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Arduino</span>
+          </div>
+        </div>
+        <p class="muted">Smart wearable glasses featuring ultrasonic proximity sensing, light detection, haptic feedback, and audio alerts for enhanced environmental awareness.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Project Overview</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>What is Mirror Cap?</h3>
+        <p class="muted">Mirror Cap is an innovative wearable assistive device that augments situational awareness through multi-sensor feedback. The glasses combine ultrasonic proximity detection, light sensors (LDR), haptic feedback, and audio alerts to provide real-time environmental information.</p>
+        <h3 style="margin-top:20px">Core Features</h3>
+        <ul class="feature-list">
+          <li><strong>Ultrasonic Sensors:</strong> Real-time obstacle detection and distance measurement</li>
+          <li>Light Dependent Resistor (LDR): Ambient light sensing for adaptive feedback</li>
+          <li>Haptic Feedback: Vibration alerts for non-visual cues</li>
+          <li>Audio Buzzer: Multi-tone alert system for warnings</li>
+          <li>Lightweight, wearable design for all-day use</li>
+          <li>Low power consumption for extended battery life</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Technical Design</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>Hardware Stack</h3>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <strong>Microcontroller</strong><br>
+            <span class="muted">Arduino/ATmega328</span>
+          </div>
+          <div class="tech-item">
+            <strong>Proximity Sensing</strong><br>
+            <span class="muted">Ultrasonic HC-SR04</span>
+          </div>
+          <div class="tech-item">
+            <strong>Light Sensing</strong><br>
+            <span class="muted">LDR + Analog Input</span>
+          </div>
+          <div class="tech-item">
+            <strong>Feedback Systems</strong><br>
+            <span class="muted">Buzzer + Motor</span>
+          </div>
+        </div>
+        <h3 style="margin-top:24px">System Architecture</h3>
+        <ul class="feature-list">
+          <li>Multi-sensor data fusion for accurate sensing</li>
+          <li>Real-time signal processing and threshold detection</li>
+          <li>Smart feedback routing (haptic vs. audio)</li>
+          <li>Power-efficient polling and interrupt-driven architecture</li>
+          <li>Calibration routines for sensor accuracy</li>
+          <li>Extensible firmware for additional sensors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-section">
+        <h3 class="gallery-title">Project Images</h3>
+        <div class="photo-grid expandable">
+          <div class="photo-item clickable">
+            <img src="assets/Mirror/ProjectMirror1.jpg" alt="Mirror Cap Project 1" />
+          </div>
+          <div class="photo-item clickable">
+            <img src="assets/Mirror/ProjectMirror2.jpg" alt="Mirror Cap Project 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Sensor Integration</h2>
+    <div class="card">
+      <div class="card-inner">
+        <h3>Ultrasonic Detection</h3>
+        <p class="muted">The ultrasonic sensors measure distance to obstacles in real-time, providing continuous proximity awareness. Distance thresholds trigger haptic or audio alerts based on urgency.</p>
+        
+        <h3 style="margin-top:20px">Light Adaptation</h3>
+        <p class="muted">The LDR sensor adjusts feedback intensity based on ambient lighting conditions, ensuring audible and haptic signals are always appropriate for the environment.</p>
+
+        <h3 style="margin-top:20px">Multi-Modal Feedback</h3>
+        <ul class="feature-list">
+          <li>Haptic vibration for subtle, discreet alerts</li>
+          <li>Audio tones with varying frequencies for urgency levels</li>
+          <li>Adaptive feedback intensity based on environment</li>
+          <li>User-customizable alert thresholds</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Key Achievements</h2>
+    <div class="card">
+      <div class="card-inner">
+        <div class="results-grid">
+          <div class="result-item">
+            <div class="result-number">4m</div>
+            <div class="result-label">Detection Range</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">50ms</div>
+            <div class="result-label">Response Time</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">2</div>
+            <div class="result-label">Feedback Types</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number">80g</div>
+            <div class="result-label">Total Weight</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Design Challenges</h2>
+    <div class="card">
+      <div class="card-inner">
+        <div class="challenge-item">
+          <h4>Challenge: Sensor Interference</h4>
+          <p class="muted">Ultrasonic sensors can interfere with each other and be affected by environmental conditions.</p>
+          <p class="muted"><strong>Solution:</strong> Staggered sensor activation, filtering algorithms, and environmental calibration.</p>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:20px 0">
+        <div class="challenge-item">
+          <h4>Challenge: Power Efficiency</h4>
+          <p class="muted">Continuous sensor polling drains battery quickly in wearable devices.</p>
+          <p class="muted"><strong>Solution:</strong> Optimized polling intervals, sleep modes, and selective sensor activation.</p>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:20px 0">
+        <div class="challenge-item">
+          <h4>Challenge: User Comfort</h4>
+          <p class="muted">Designing alerts that are effective without being intrusive or annoying.</p>
+          <p class="muted"><strong>Solution:</strong> Programmable thresholds, adaptive feedback, and user-centered design testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <a class="btn primary" href="projects.html">Back to Projects</a>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Paul Chukwu. All rights reserved.</div>
+      <div class="muted">Built with vanilla HTML/CSS/JS. Deployed on GitHub Pages or Netlify.</div>
+    </div>
+  </footer>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Image expansion modal
+    document.querySelectorAll('.photo-grid.expandable .photo-item.clickable img').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const captionText = document.getElementById('caption');
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+        captionText.textContent = this.alt;
+      });
+    });
+
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.querySelector('.modal-close');
+    
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

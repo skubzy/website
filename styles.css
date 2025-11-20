@@ -636,3 +636,17 @@ footer{
   height: auto;
   display: block;
 }
+
+/* === LOADING SPINNER === */
+.loading-spinner {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+  font-weight: 500;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
